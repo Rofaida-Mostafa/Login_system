@@ -73,7 +73,7 @@ if (signupButton) {
         usersArray.push(users);
         let setData = JSON.stringify(usersArray);
         localStorage.setItem("users", setData);
-        window.location.pathname = "login-system/index.html";
+        window.location.pathname = "Login_system/index.html";
 
         return true;
       }
@@ -90,7 +90,7 @@ if (signupButton) {
           signup_Message.innerHTML =
             '<span class= "fw-bold text-success m-4"> Registration is success. </span>';
 
-          window.location.pathname = "login-system/index.html";
+          window.location.pathname = "Login_system/index.html";
 
           return true;
         }
@@ -135,7 +135,7 @@ if (loginButton) {
         login_Message.innerHTML =
           '<span class= "fw-bold text-success m-4">  "correct email or password"</span>';
 
-        window.location.pathname = "login-system/home.html";
+        window.location.pathname = "Login_system/home.html";
       } else {
         login_Message.textContent = "incorrect email or password";
       }
@@ -169,12 +169,12 @@ function clearFormlog() {
 }
 
 window.addEventListener("load", () => {
-  if (location.pathname == "login-system/index.html") {
+  if (location.pathname == "Login_system/index.html") {
     clearFormlog();
   }
 });
 window.addEventListener("load", () => {
-  if (location.pathname == "login-system/signup.html") {
+  if (location.pathname == "Login_system/signup.html") {
     clearForm();
   }
 });
@@ -182,7 +182,7 @@ window.addEventListener("load", () => {
 // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx (Logout) xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx //
 function logoutMethod(name) {
   name.addEventListener("click", () => {
-    window.location.pathname = "login-system/index.html";
+    window.location.pathname = "Login_system/index.html";
     localStorage.removeItem("id");
   });
 }
