@@ -1,3 +1,3 @@
   if (!sessionStorage.getItem("id")) {
-     window.location.pathname = "login-system/index.html";
+     window.location.pathname = "Login_system/index.html";
   }
