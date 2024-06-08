@@ -1,0 +1,117 @@
+body {
+    background: #24353f;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#home {
+    height: 80vh;
+}
+
+h1 {
+    color: #17a2b8;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.navbar-dark,
+.h1 {
+    box-shadow: -4px 2.5px 55px -9px rgba(0, 0, 0, 1);
+}
+
+
+input::placeholder,
+textarea::placeholder {
+    color: rgb(182, 182, 182) !important;
+}
+
+input:focus,
+textarea:focus {
+    box-shadow: 0 0 0 0 transparent !important;
+}
+
+input,
+textarea {
+    color: #fff !important;
+
+    background-color: transparent !important;
+}
+
+span,
+p#message,
+p#wrongs {
+    background-color: #fff;
+    font-weight: bold;
+}
+
+.recipe img {
+    object-fit: contain;
+
+}
+
+h2 {
+    /* font-size: 18px !important; */
+    color: rgb(224, 162, 162);
+    border: #7d6c56 1px solid;
+    padding: 5px;
+    border-radius: 10px;
+
+}
+
+.food {
+    border: #205e67 2px solid;
+}
+
+#logout {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgba(205, 204, 204, 0.945);
+}
+
+#logout:hover {
+    color: black;
+}
+
+button:hover {
+    font-weight: 600 !important;
+
+    color: rgb(229, 242, 250) !important;
+}
+
+.display {
+    margin-top: -15vh;
+}
+
+@media (max-width: 600px) {
+    .Main {
+        display: none;
+    }
+
+    #smallLogout {
+        color: rgba(242, 230, 208, 0.913);
+        font-weight: 600;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    #smallLogout:hover {
+        color: black;
+    }
+    
+    #offcanvasTop {
+        background-color: #d0cccc58;
+        height: 11vh !important;
+
+    }
+}
+
+@media (min-width: 601px) {
+
+    .hide,
+    .hide1 {
+        display: none;
+    }
+
+}
